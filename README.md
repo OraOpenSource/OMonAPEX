@@ -6,8 +6,10 @@ The system allows the user to dynamically change the appearance of the program.
 
 
 # How to install
+The APEX application export is included in this repo.
 
-
+History
+Monitoring application was originally created by .... and is now maintained by OraOpenSource.
 
 # version
 version 1.0
