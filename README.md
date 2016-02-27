@@ -7,6 +7,8 @@ The system allows the user to dynamically change the appearance of the program.
 # Note
 You can help by filling issues through Github.
 
+Three regions on home page are disable. I will fix it on next release soon.
+
 # How to install
 The APEX application export is included in this repo.
 to install: 1. Create a new user: create user UserName identified by password;
