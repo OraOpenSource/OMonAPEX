@@ -9,12 +9,16 @@ You can help by filling issues through Github.
 
 # How to install
 The APEX application export is included in this repo.
+to install: 1. Create a new user: create user UserName identified by password;
+            2. Grant new user:    grant select any dictionary to UserName;
+            3. Upload application (f500.sql) to ypur workspace and install it.
 
-History
-Monitoring application was originally created by .... and is now maintained by OraOpenSource.
+#History
+Monitoring application was originally created by Karsten Thiele.
 
 # version
 version 1.0
+The new version will be release as soon as possible with more capabilities.
 
 # Lisence
 See LICENSE.md
