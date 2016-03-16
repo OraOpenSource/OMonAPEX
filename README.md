@@ -6,17 +6,6 @@ Monitoring a database is one of the main tasks of database administrators. There
 ## Feedback/Issues
 Please submit any feedback, suggestions, or issues on the project's issue page.
 
-<<<<<<< HEAD
-=======
-Three regions on home page are disable. I will fix it on next release soon.
-
-# How to install
-The APEX application export is included in this repo.
-to install: 1. Create a new user: create user UserName identified by password;
-            2. Grant new user:    grant select any dictionary to UserName;
-            3. Upload application (f500.sql) to ypur workspace and install it.
->>>>>>> origin/master
-
 ## Installation
 If you're new to Oracle APEX, it's recommended you simply install Oracle APEX 5 or higher on your system and then create a new workspace. Then create a user/schema on your database and grant select any dictionary to new user. Download application (f500.sql) from project’s GitHub page and import it into your new workspace environment to get up and running as quickly as possible. Once you are comfortable using this application, it is recommended to restrict the privileges and customize your application.
 
@@ -25,9 +14,11 @@ If you're new to Oracle APEX, it's recommended you simply install Oracle APEX 5 
 
 2. Run:
 
-@create_user.sql
+> create user DBMON identified by DBMON;
 
-Enter the username, tablespace, temporary tablespace and password for the new schema.
+> grant select any dictionary to DBMON;
+
+Please change DBMON password to what you want.
 
 3. Check new user privileges as system or a user with the DBA role:
 
@@ -51,7 +42,7 @@ Oracle Monitoring application (OMinAPEX) will update regularly, new application 
 
 ## Uninstall
 To uninstall Oracle Monitoring application (OMinAPEX) simply delete it from your workspace and revoke the privileges from user by running this command:
-> Revoke select any dictionary from USER;
+> Revoke select any dictionary from DBMON;
 
 
 ## Screen Shot and Demo
