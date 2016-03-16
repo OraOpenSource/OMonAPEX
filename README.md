@@ -1,35 +1,82 @@
-# Oracle-monitoring-in-oracle-apex
+# Oracle Monitoring in Oracle APEX (OMinAPEX)
 
-# About
-Monitoring a database is one of the main tasks of database administrators. There are various tools and facilities available for this purpose. Some of these tools that can be noted is Oracle EM tool which is a perfect choice. In many cases, the employer may requests monitoring the database, and providing access to that environment is accompanied by substantial risk. To do so, one of the safe and alternative ways of providing monitoring reports is to hand a program to provide the monitoring. What is shown below is a database monitoring system that can provide a great and beautiful monitoring report in the Oracle Apex.
-The system allows the user to dynamically change the appearance of the program.
+## What is Oracle Monitoring in Oracle APEX (OMinAPEX)?
+Monitoring a database is one of the main tasks of database administrators. There are various tools and facilities available for this purpose. Some of these tools that can be noted is Oracle EM tool which is a perfect choice. But In many cases, the employer may requests monitoring the database, and providing access to that environment is accompanied by substantial risk. To do so, one of the safe and alternative ways of providing monitoring reports is to hand a program to provide the monitoring. Oracle Monitoring in Oracle APEX (OMinAPEX) is a database monitoring application that can provide a great and beautiful monitoring report in the Oracle APEX. The goal of Oracle Monitoring in Oracle APEX (OMinAPEX) application is to be as simple as possible to install and use.
 
-# Note
-You can help by filling issues through Github.
+## Feedback/Issues
+Please submit any feedback, suggestions, or issues on the project's issue page.
 
-# How to install
-The APEX application export is included in this repo.
-to install: 1. Create a new user: create user UserName identified by password;
-            2. Grant new user:    grant select any dictionary to UserName;
-            3. Upload application (f500.sql) to ypur workspace and install it.
 
-            
+## Installation
+If you're new to Oracle APEX, it's recommended you simply install Oracle APEX 5 or higher on your system and then create a new workspace. Then create a user/schema on your database and grant select any dictionary to new user. Download application (f500.sql) from project’s GitHub page and import it into your new workspace environment to get up and running as quickly as possible. Once you are comfortable using this application, it is recommended to restrict the privileges and customize your application.
 
+## How to download and install
+1. Using sql*plus or SQL Developer, connect to the database as system or a user with the DBA role.
+
+2. Run:
+
+@create_user.sql
+
+Enter the username, tablespace, temporary tablespace and password for the new schema.
+
+3. Check new user privileges as system or a user with the DBA role:
+
+select * from dba_sys_privs where privilege = 'SELECT ANY DICTIONARY';
+
+4. Create your new Workspace on your new schema that created on step 2: name it for example WS_DBMON
+
+5. Download Monitoring application (OMinAPEX) from project’s GitHub page. Under the releases directory, simply unzip the corresponding version: f500.sql
+
+6. Log in to your workspace, import monitoring application (f500.sql) and install it. 
+
+
+## Grants
+To access data dictionary tables and views we grant SELECT ANY DIRECTORY to new created user. SELECT ANY DICTIONARY is a system privilege, which remains active throughout the sessions and allows the user to create stored objects on objects on which it has privileges as a result of the grant.
+Please pay attention to this article [about new behavior in Oracle Database 12c and 11.2.0.4: SELECT ANY DICTIONARY with reduced privilege set](https://blogs.oracle.com/UPGRADE/entry/change_in_12c_select_any)
+
+
+## Previous Installations
+Oracle Monitoring application (OMinAPEX) will update regularly, new application export file will be available after each release on project’s GitHub page. To use new version, just replace it on your previous application or import and install it separately and then remove your previous version. 
+
+
+## Uninstall
+To uninstall Oracle Monitoring application (OMinAPEX) simply delete it from your workspace and revoke the privileges from user by running this command:
+> Revoke select any dictionary from USER;
+
+
+## Screen Shot and Demo
 ![ScreenShot](https://cloud.githubusercontent.com/assets/13412866/13371584/216d0df6-dd3f-11e5-93ab-68653a5bd897.jpg)
 
-Look at it in : [Demo Page](http://iranapex.ir/database-monitoring-in-oracle-apex5/)
+To see application scrren shots : [Demo Page](http://iranapex.ir/database-monitoring-in-oracle-apex5/)
 
-#History
-Monitoring application was originally created by Karsten Thiele.
 
-# version
-version 1.0
-The new version will be release as soon as possible with more capabilities.
+## Known Issues
+If gauge regions on home page those not show, it’s a known issue that will fix on next release.
 
-# Lisence
-See https://opensource.org/licenses/MIT
 
-#Sponsor
-Iranapex company 
-Check company website: [Website](http://iranapex.ir)
-by: Mahdi Ahmadi
+## Supported APEX Versions
+Oracle Monitoring application (OMinAPEX) is compatible with Oracle Application Express 5.0 and above. If you are using version below 5.0, you will be able to use this application but you should change Universal Theme to another theme like theme 25. There is also another, even better option. Upgrade your APEX to version 5.0 :)
+
+
+## Support and Sponsor
+Oracle Monitoring application (OMinAPEX) is open source under the GPLv3 license, and can be used at no cost.
+
+IRANAPEX Company is our kindly sponsor. Check company website: [www.iranapex.ir](https://www.iranapex.ir)
+
+
+## History
+Monitoring application was originally created by Karsten Thiele and is now maintained by OraOpenSource.
+
+
+## Version
+Version 1.0. The new version will be release with more capabilities.
+
+
+## Contributing to project
+Now if you have any issue or any improvement or feature to add, here is how you can take action.
+
+-	If you find a bug in application and you don’t know how to fix it, have trouble following the documentation or have a question about the application please create an issue! Whatever issue you’re having, you’re likely not the only one, so others will find your issue helpful, too. Before creating an issue please check existing issues for your issue, also be clear and Include details.
+-	If you’re able to patch the bug or add the feature yourself – fantastic, make a pull request! and let us know. Once you’ve submitted a pull request the maintainer(s) can compare your branch to the existing one and decide whether or not to incorporate (pull in) your changes. Oh, remember, please create a branch for your edits.
+-	Once you’ve opened a pull request a discussion will start around your proposed changes. Other contributors and users may chime in, but ultimately the decision is made by the maintainer(s).
+
+
