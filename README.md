@@ -6,6 +6,16 @@ Monitoring a database is one of the main tasks of database administrators. There
 ## Feedback/Issues
 Please submit any feedback, suggestions, or issues on the project's issue page.
 
+<<<<<<< HEAD
+=======
+Three regions on home page are disable. I will fix it on next release soon.
+
+# How to install
+The APEX application export is included in this repo.
+to install: 1. Create a new user: create user UserName identified by password;
+            2. Grant new user:    grant select any dictionary to UserName;
+            3. Upload application (f500.sql) to ypur workspace and install it.
+>>>>>>> origin/master
 
 ## Installation
 If you're new to Oracle APEX, it's recommended you simply install Oracle APEX 5 or higher on your system and then create a new workspace. Then create a user/schema on your database and grant select any dictionary to new user. Download application (f500.sql) from project’s GitHub page and import it into your new workspace environment to get up and running as quickly as possible. Once you are comfortable using this application, it is recommended to restrict the privileges and customize your application.
