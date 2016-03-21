@@ -14,41 +14,43 @@ If you're new to Oracle APEX, it's recommended you simply install Oracle APEX 5 
 
 2. Run:
 
-> create user DBMON identified by DBMON;
+```sql
+create user DBMON identified by DBMON;
+grant select any dictionary to DBMON;
+```
 
-> grant select any dictionary to DBMON;
-
-Please change DBMON password to what you want.
+Please change `DBMON` password to what you want.
 
 3. Check new user privileges as system or a user with the DBA role:
 
-select * from dba_sys_privs where privilege = 'SELECT ANY DICTIONARY';
+`select * from dba_sys_privs where privilege = 'SELECT ANY DICTIONARY';`
 
 4. Create your new Workspace on your new schema that created on step 2: name it for example WS_DBMON
 
-5. Download Monitoring application (OMinAPEX) from project’s GitHub page. Under the releases directory, simply unzip the corresponding version: f500.sql
+5. Download Monitoring application (OMinAPEX) from project’s GitHub page. Under the [`releases`](/Releases) directory, simply unzip the corresponding version: `f500.sql`
 
-6. Log in to your workspace, import monitoring application (f500.sql) and install it. 
+6. Log in to your workspace, import monitoring application (`f500.sql`) and install it.
 
 
 ## Grants
-To access data dictionary tables and views we grant SELECT ANY DIRECTORY to new created user. SELECT ANY DICTIONARY is a system privilege, which remains active throughout the sessions and allows the user to create stored objects on objects on which it has privileges as a result of the grant.
+To access data dictionary tables and views we grant `SELECT ANY DIRECTORY` to new created user. `SELECT ANY DICTIONARY` is a system privilege, which remains active throughout the sessions and allows the user to create stored objects on objects on which it has privileges as a result of the grant.
 Please pay attention to this article [about new behavior in Oracle Database 12c and 11.2.0.4: SELECT ANY DICTIONARY with reduced privilege set](https://blogs.oracle.com/UPGRADE/entry/change_in_12c_select_any)
 
 
 ## Previous Installations
-Oracle Monitoring application (OMinAPEX) will update regularly, new application export file will be available after each release on project’s GitHub page. To use new version, just replace it on your previous application or import and install it separately and then remove your previous version. 
+Oracle Monitoring application (OMinAPEX) will update regularly, new application export file will be available after each release on project’s GitHub page. To use new version, just replace it on your previous application or import and install it separately and then remove your previous version.
 
 
 ## Uninstall
 To uninstall Oracle Monitoring application (OMinAPEX) simply delete it from your workspace and revoke the privileges from user by running this command:
-> Revoke select any dictionary from DBMON;
-
+```sql
+revoke select any dictionary from dbmon;
+```
 
 ## Screen Shot and Demo
 ![ScreenShot](https://cloud.githubusercontent.com/assets/13412866/13371584/216d0df6-dd3f-11e5-93ab-68653a5bd897.jpg)
 
-To see application scrren shots : [Demo Page](http://iranapex.ir/database-monitoring-in-oracle-apex5/)
+To see application screen shots : [Demo Page](http://iranapex.ir/database-monitoring-in-oracle-apex5/)
 
 
 ## Known Issues
@@ -79,5 +81,3 @@ Now if you have any issue or any improvement or feature to add, here is how you 
 -	If you find a bug in application and you don’t know how to fix it, have trouble following the documentation or have a question about the application please create an issue! Whatever issue you’re having, you’re likely not the only one, so others will find your issue helpful, too. Before creating an issue please check existing issues for your issue, also be clear and Include details.
 -	If you’re able to patch the bug or add the feature yourself – fantastic, make a pull request! and let us know. Once you’ve submitted a pull request the maintainer(s) can compare your branch to the existing one and decide whether or not to incorporate (pull in) your changes. Oh, remember, please create a branch for your edits.
 -	Once you’ve opened a pull request a discussion will start around your proposed changes. Other contributors and users may chime in, but ultimately the decision is made by the maintainer(s).
-
-
