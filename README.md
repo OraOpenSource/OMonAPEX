@@ -23,11 +23,13 @@ Please change `DBMON` password to what you want.
 
 3. Check new user privileges as system or a user with the DBA role:
 
-`select * from dba_sys_privs where privilege = 'SELECT ANY DICTIONARY';`
+```sql
+select * from dba_sys_privs where privilege = 'SELECT ANY DICTIONARY';
+```
 
 4. Create your new Workspace on your new schema that created on step 2: name it for example WS_DBMON
 
-5. Download Monitoring application (OMinAPEX) from project’s GitHub page. Under the [`releases`](/Releases) directory, simply unzip the corresponding version: `f500.sql`
+5. Download Monitoring application (OMinAPEX) from project’s GitHub page. Under the [`releases`](/Release) directory, simply unzip the corresponding version: `f500.sql`
 
 6. Log in to your workspace, import monitoring application (`f500.sql`) and install it.
 
