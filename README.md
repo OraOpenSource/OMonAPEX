@@ -64,7 +64,7 @@ OMonAPEX is compatible with Oracle Application Express 5.0 and above. If you are
 
 
 ## Sponsors
-OMonAPEX is maintained and sponsored by [IRANAPEX](https://www.iranapex.ir).
+OMonAPEX is maintained and sponsored by [IRANAPEX](http://www.iranapex.ir).
 
 
 ## History
