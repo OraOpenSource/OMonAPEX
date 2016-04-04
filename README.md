@@ -1,7 +1,7 @@
 # Oracle Monitoring in Oracle APEX (OMonAPEX)
 
-## What is Oracle Monitoring in Oracle APEX (OMonAPEX)?
-Monitoring a database is one of the main tasks of database administrators. There are various tools and facilities available for this purpose. Some of these tools that can be noted is Oracle EM tool which is a perfect choice. But In many cases, the employer may requests monitoring the database, and providing access to that environment is accompanied by substantial risk. To do so, one of the safe and alternative ways of providing monitoring reports is to hand a program to provide the monitoring. Oracle Monitoring in Oracle APEX (OMonAPEX) is a database monitoring application that can provide a great and beautiful monitoring report in the Oracle APEX. The goal of Oracle Monitoring in Oracle APEX (OMonAPEX) application is to be as simple as possible to install and use.
+## OMonAPEX?
+Monitoring a database is one of the main tasks of database administrators. There are various tools and facilities available for this purpose. Some of these tools that can be noted is Oracle EM tool which is a perfect choice. But In many cases, the employer may requests monitoring the database, and providing access to that environment is accompanied by substantial risk. To do so, one of the safe and alternative ways of providing monitoring reports is to hand a program to provide the monitoring. OMonAPEX is a database monitoring application that can provide a great and beautiful monitoring report in the Oracle APEX. The goal of OMonAPEX application is to be as simple as possible to install and use.
 
 ## Feedback/Issues
 Please submit any feedback, suggestions, or issues on the project's issue page.
@@ -40,11 +40,11 @@ Please pay attention to this article [about new behavior in Oracle Database 12c 
 
 
 ## Previous Installations
-Oracle Monitoring application (OMonAPEX) will update regularly, new application export file will be available after each release on project’s GitHub page. To use new version, just replace it on your previous application or import and install it separately and then remove your previous version.
+OMonAPEX will be updated regularly, new application export file will be available after each release on project’s GitHub page. To use new version, just replace it on your previous application or import and install it separately and then remove your previous version.
 
 
 ## Uninstall
-To uninstall Oracle Monitoring application (OMonAPEX) simply delete it from your workspace and revoke the privileges from user by running this command:
+To uninstall OMonAPEX simply delete it from your workspace and revoke the privileges from user by running this command:
 ```sql
 revoke select any dictionary from dbmon;
 ```
@@ -60,13 +60,11 @@ If gauge regions on home page those not show, it’s a known issue that will fix
 
 
 ## Supported APEX Versions
-Oracle Monitoring application (OMonAPEX) is compatible with Oracle Application Express 5.0 and above. If you are using version below 5.0, you will be able to use this application but you should change Universal Theme to another theme like theme 25. There is also another, even better option. Upgrade your APEX to version 5.0 :)
+OMonAPEX is compatible with Oracle Application Express 5.0 and above. If you are using version below 5.0, you will be able to use this application but you should change Universal Theme to another theme like theme 25. There is also another, even better option. Upgrade your APEX to version 5.0 :)
 
 
-## Support and Sponsor
-Oracle Monitoring application (OMonAPEX) is open source under the GPLv3 license, and can be used at no cost.
-
-IRANAPEX Company is our kindly sponsor. Check company website: [www.iranapex.ir](https://www.iranapex.ir)
+## Sponsors
+OMonAPEX is maintained and sponsored by [IRANAPEX](https://www.iranapex.ir).
 
 
 ## History
