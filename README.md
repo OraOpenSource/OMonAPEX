@@ -35,7 +35,7 @@ select * from dba_sys_privs where privilege = 'SELECT ANY DICTIONARY';
 
 
 ## Grants
-To access data dictionary tables and views we grant `SELECT ANY DIRECTORY` to new created user. `SELECT ANY DICTIONARY` is a system privilege, which remains active throughout the sessions and allows the user to create stored objects on objects on which it has privileges as a result of the grant.
+To access data dictionary tables and views we grant `SELECT ANY DICTIONARY` to new created user. `SELECT ANY DICTIONARY` is a system privilege, which remains active throughout the sessions and allows the user to create stored objects on objects on which it has privileges as a result of the grant.
 Please pay attention to this article [about new behavior in Oracle Database 12c and 11.2.0.4: SELECT ANY DICTIONARY with reduced privilege set](https://blogs.oracle.com/UPGRADE/entry/change_in_12c_select_any)
 
 
