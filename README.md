@@ -3,6 +3,10 @@
 ## OMonAPEX?
 Monitoring a database is one of the main tasks of database administrators. There are various tools and facilities available for this purpose. Some of these tools that can be noted is Oracle EM tool which is a perfect choice. But In many cases, the employer may requests monitoring the database, and providing access to that environment is accompanied by substantial risk. To do so, one of the safe and alternative ways of providing monitoring reports is to hand a program to provide the monitoring. OMonAPEX is a database monitoring application that can provide a great and beautiful monitoring report in the Oracle APEX. The goal of OMonAPEX application is to be as simple as possible to install and use.
 
+
+Introduction Application now available: [Introduction](https://apex.oracle.com/pls/apex/f?p=63389:1)
+
+
 ## Feedback/Issues
 Please submit any feedback, suggestions, or issues on the project's issue page.
 
@@ -50,7 +54,7 @@ revoke select any dictionary from dbmon;
 ```
 
 ## Screen Shot and Demo
-![ScreenShot](https://cloud.githubusercontent.com/assets/13412866/13371584/216d0df6-dd3f-11e5-93ab-68653a5bd897.jpg)
+![ScreenShot](https://cloud.githubusercontent.com/assets/13412866/16200150/57bc5ae2-3721-11e6-874c-81b0d48292dd.png)
 
 To see application screen shots : [Demo Page](http://iranapex.ir/database-monitoring-in-oracle-apex5/)
 
@@ -72,8 +76,22 @@ Monitoring application was originally created by Karsten Thiele and is now maint
 
 
 ## Version
-Version 1.0. The new version will be release with more capabilities.
+Version 1.0. 
+Version 1.1. (Monday - 2016 20 June)
 
+## Change log
+
+# 1.1
+More accurate reports. All reports were reviewed to display informations smarter and more straightforward.
+Detail information are now available on "Single Row View" in Interactive Reports.
+Nice Login Page.
+"Show Maximize Button" property on all report regions. 
+Full Screen Button on home page.
+Red Vita Theme Style now available.
+Drill down reports in Scheduler Jobs section.
+
+# 1.0
+Initial Release
 
 ## Contributing to project
 Now if you have any issue or any improvement or feature to add, here is how you can take action.
