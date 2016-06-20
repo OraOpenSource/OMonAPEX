@@ -77,17 +77,26 @@ Monitoring application was originally created by Karsten Thiele and is now maint
 
 ## Version
 Version 1.0. 
+
 Version 1.1. (Monday - 2016 20 June)
 
 ## Change log
 
 # 1.1
+Introduction Application now available. [Introduction](https://apex.oracle.com/pls/apex/f?p=63389:1)
+
 More accurate reports. All reports were reviewed to display informations smarter and more straightforward.
+
 Detail information are now available on "Single Row View" in Interactive Reports.
+
 Nice Login Page.
+
 "Show Maximize Button" property on all report regions. 
+
 Full Screen Button on home page.
+
 Red Vita Theme Style now available.
+
 Drill down reports in Scheduler Jobs section.
 
 # 1.0
