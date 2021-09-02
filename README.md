@@ -82,6 +82,10 @@ Version 1.1. (Monday - 2016 20 June)
 
 ## Change log
 
+# 1.2
+- bug fixes
+- apex views
+
 # 1.1
 Introduction Application now available. [Introduction](https://apex.oracle.com/pls/apex/f?p=63389:1)
 
