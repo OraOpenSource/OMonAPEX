@@ -79,6 +79,7 @@ Monitoring application was originally created by Karsten Thiele and is now maint
 Version 1.0. 
 
 Version 1.1. (Monday - 2016 20 June)
+Version 1.2. 2021 Sep 01
 
 ## Change log
 
