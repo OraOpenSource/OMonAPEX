@@ -56,7 +56,7 @@ revoke select any dictionary from dbmon;
 ## Screen Shot and Demo
 ![ScreenShot](https://cloud.githubusercontent.com/assets/13412866/16200150/57bc5ae2-3721-11e6-874c-81b0d48292dd.png)
 
-To see application screen shots : [Demo Page](http://iranapex.ir/database-monitoring-in-oracle-apex5/)
+To see application screen shots : [Demo Page](https://apex.ktcg.de/apex/f?p=500)
 
 
 ## Known Issues
