@@ -4,7 +4,7 @@
 Monitoring a database is one of the main tasks of database administrators. There are various tools and facilities available for this purpose. Some of these tools that can be noted is Oracle EM tool which is a perfect choice. But In many cases, the employer may requests monitoring the database, and providing access to that environment is accompanied by substantial risk. To do so, one of the safe and alternative ways of providing monitoring reports is to hand a program to provide the monitoring. OMonAPEX is a database monitoring application that can provide a great and beautiful monitoring report in the Oracle APEX. The goal of OMonAPEX application is to be as simple as possible to install and use.
 
 
-Introduction Application now available: [Introduction](https://apex.oracle.com/pls/apex/f?p=63389:1)
+Introduction Application now available: [Introduction](https://apex.ktcg.de/apex/f?p=500)
 
 
 ## Feedback/Issues
