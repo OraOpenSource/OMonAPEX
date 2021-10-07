@@ -68,7 +68,7 @@ OMonAPEX is compatible with Oracle Application Express 5.0 and above. If you are
 
 
 ## Sponsors
-OMonAPEX is maintained and sponsored by [IRANAPEX](http://www.iranapex.ir).
+OMonAPEX is maintained and sponsored by [KTCG](http://www.ktcg.de).
 
 
 ## History
@@ -90,7 +90,7 @@ Version 1.2. 2021 Sep 01
 - apex views
 
 # 1.1
-Introduction Application now available. [Introduction](https://apex.oracle.com/pls/apex/f?p=63389:1)
+Introduction Application now available. [Introduction](https://apex.ktcg.de/apex/f?p=500)
 
 More accurate reports. All reports were reviewed to display informations smarter and more straightforward.
 
