@@ -4,7 +4,7 @@
 Monitoring a database is one of the main tasks of database administrators. There are various tools and facilities available for this purpose. Some of these tools that can be noted is Oracle EM tool which is a perfect choice. But In many cases, the employer may requests monitoring the database, and providing access to that environment is accompanied by substantial risk. To do so, one of the safe and alternative ways of providing monitoring reports is to hand a program to provide the monitoring. OMonAPEX is a database monitoring application that can provide a great and beautiful monitoring report in the Oracle APEX. The goal of OMonAPEX application is to be as simple as possible to install and use.
 
 
-Introduction Application now available: [Introduction](https://apex.oracle.com/pls/apex/f?p=63389:1)
+Introduction Application now available: [Introduction](https://apex.ktcg.de/apex/f?p=500)
 
 
 ## Feedback/Issues
@@ -54,9 +54,9 @@ revoke select any dictionary from dbmon;
 ```
 
 ## Screen Shot and Demo
-![ScreenShot](https://cloud.githubusercontent.com/assets/13412866/16200150/57bc5ae2-3721-11e6-874c-81b0d48292dd.png)
+<img src="db_mon.PNG">
 
-To see application screen shots : [Demo Page](http://iranapex.ir/database-monitoring-in-oracle-apex5/)
+To see application screen shots : [Demo Page](https://apex.ktcg.de/apex/f?p=500)
 
 
 ## Known Issues
@@ -68,7 +68,7 @@ OMonAPEX is compatible with Oracle Application Express 5.0 and above. If you are
 
 
 ## Sponsors
-OMonAPEX is maintained and sponsored by [IRANAPEX](http://www.iranapex.ir).
+OMonAPEX is maintained and sponsored by [KTCG](http://www.ktcg.de).
 
 
 ## History
@@ -76,14 +76,21 @@ Monitoring application was originally created by Karsten Thiele and is now maint
 
 
 ## Version
-Version 1.0. 
+Version 1.0.
 
 Version 1.1. (Monday - 2016 20 June)
 
+Version 1.2. 2021 Sep 01
+
+
 ## Change log
 
+# 1.2
+- bug fixes
+- apex views
+
 # 1.1
-Introduction Application now available. [Introduction](https://apex.oracle.com/pls/apex/f?p=63389:1)
+Introduction Application now available. [Introduction](https://apex.ktcg.de/apex/f?p=500)
 
 More accurate reports. All reports were reviewed to display informations smarter and more straightforward.
 
